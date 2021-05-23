@@ -14,9 +14,9 @@ function setup(){
     var canvas = createCanvas(400,400);
     engine = Engine.create();
     world = engine.world;
-    box1 = new Box(200,300,50,50);
-    box2 = new Box(240,100,50,10);
-    box3 = new Box(245,300,50,70);
+    box1 = new Box(300,300,50,50);
+    box2 = new Box(340,100,50,10);
+    box3 = new Box(345,300,50,70);
 
     var ground_options ={
         isStatic: true
@@ -30,7 +30,7 @@ function setup(){
 }
 
 function draw(){
-    background(0);
+    background("pink");
     Engine.update(engine);
     rectMode(CENTER);
     rect(ground.position.x,ground.position.y,400,20);
